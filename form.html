@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styless.css">
+<script>
+        function FORM(){var name= document.forms.RegForm.Name.value;
+        var email=document.forms.RegForm.EMail.value;
+    var phone=documnent.forms.RegForm.Telephone.value;
+    var what=document.forms.RegForm.Subject.value;
+var password=document.forms.RegForm.Password.value;
+var address=document.forms.RegForm.Address.value
+var regEmail=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g
+var regPhone=/^\d{10}$/g;
+var regName=/\d+$/g;
+if(name==""||regName.test(name)){window.alert("Please enter your full name properly.");
+            name.focus();
+        return false;}
+ if (address == "") {window.alert("Please enter your address properly.");
+address.focus();return false;}
+if (email == "" || !regEmail.test(email)) {window.alert("Please enter a correct e-mail address.");
+email.focus();
+return false;}
+if (password == "") {alert("Please enter your password");
+password.focus();
+return false;}
+ if(password.length <6){alert("Password should atleast consist of 6 characters");password.focus();
+return false;}
+if (phone == "" || !regPhone.test(phone)) { alert("Please enter valid phone number.");
+phone.focus();
+return false;}
+if (what.selectedIndex == -1) {alert("Please enter your subject of interest.");what.focus();
+return false;}
+ return true;}
+    </script>
+ <style>
+div { box-sizing: border-box;
+width: 100%;
+border: 100px solid black;float: left;align-content: center;
+align-items: center;}
+h1{font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: antiquewhite ; padding-top: 100px;}
+ h3{font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight: 100; color: antiquewhite;}
+form {margin: 0 auto;width: 600px;}
+</style></head>
+ <body>
+    <header>
+        <a href="#" class="logo">THE SECRET GARDEN<span>.....</span></a>
+        <ul class="navigation">
+            <li><a href="...html"> Home</a></li>
+            <li><a href="P1P2.html">Noor</a></li>
+            <li><a href="newsletter.html">Khwabeeda</a></li>
+            <li><a href="letter.html">ArtArisingfromPast</a></li>
+            <li><a href="book.html"> TheSecretGarden</a></li>
+            <li><a href="kook.html"> JavaScript</a></li>
+            <li><a href="form.html" >Form <br> for  <br>registration </a></li>
+        </ul>
+    </header>
+    
+<h1 style="text-align: center;">KINDLY REGISTER YOURSELF</h1>
+<h3><form name="RegForm" onsubmit="return FORM()" method="post">
+             <p>Full Name: <input type="text"
+         size="65" name="Name" /></p><br />
+<p>Address: <input type="text";size="65" name="Address" /></p><br />
+             <p>E-mail Address: <input type="text"
+size="65" name="EMail" /></p><br />
+<p>Password: <input type="text"
+size="65" name="Password" /></p><br />
+    <p>Telephone: <input type="text"
+size="65" name="Telephone" /></p><br />
+ <p>SELECT YOUR SUBJECT OF INTEREST
+<select type="text" value="" name="Subject"><option>Photography</option>
+<option>Dancing</option>
+<option>Singing</option>
+<option>Designing</option></select></p><br /><br />
+             <p> Leave your Comments: <textarea cols="55"
+ name="Comment"> </textarea></p><p><input type="submit"
+value="SUBIT" name="Submit" /><input type="Refresh the form"
+ value="Reset" name="Reset" /></p>
+ 
+    </form>
+
+    </body>
+</html></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title></h3>
+</head>
+<body>
+   
+        </div>
+</body>
+</html>

@@ -1,0 +1,13 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  canvas {
+    display: block;z-index: 600;   
+    align-self:  center; margin-left: 100px
+    al ;  
+    left: 100px;
+   margin-top: -800px;
+   margin-left: 10px;
+  }
+  
